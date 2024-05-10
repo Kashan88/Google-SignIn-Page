@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f0f4f9;
+    font-family: "Open Sans",sans-serif;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 2.5rem 3.5rem;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    background: white;
+    box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+}
+.form h2{
+    margin: 0px 0 -0.125em;
+    padding: 0;
+    text-align: center;
+    color: #202124;
+    font-size: 24px;
+    font-weight: 600;
+}
+.form .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: -1rem;
+}
+.form .logo img{
+    width: 170px;
+}
+.form p{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.form .inputBox{
+    position: relative;
+}
+.form .inputBox input{
+    width: 93%;
+    padding: 1.4rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+}
+.form .inputBox label{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding: 0.625rem 10px;
+    font-size: 1rem;
+    color: gray;
+    pointer-events: none;
+    transition: .5s;
+}
+.form .inputBox input:focus ~ label,
+.form .inputBox input:valid ~ label,
+.form .inputBox input:not([value=""]) ~ label{
+    top: -1.125rem;
+    left: 10px;
+    color: #1a73e8;
+    background: #fff;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+form .inputBox input:focus{
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+form input[type= "submit"]{
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #1a73e8;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+}
+form input[type= "submit"]:hover{
+    background: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45)
+    0 1px 3px 1px rgba(66,133,244,0.3);
+}
